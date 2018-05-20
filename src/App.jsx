@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Navbar, ArtistsFeed } from "./components";
+import ArtistsFeed from "./components/ArtistsFeed";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
+      <div>
         <ArtistsFeed />
       </div>
     );
