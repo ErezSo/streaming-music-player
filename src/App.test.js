@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { shallow } from "enzyme";
-import App from './App';
+import App from "./App";
 
 describe("App", () => {
   let wrapper;
@@ -14,7 +14,6 @@ describe("App", () => {
   });
 
   it("renders correctly", () => {
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.debug()).toMatchSnapshot();
   });
 });
-
