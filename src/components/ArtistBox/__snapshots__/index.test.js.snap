@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistBox renders correctly 1`] = `
+"<Link to={{...}} style={{...}} replace={false}>
+  <button type=\\"button\\" className=\\"list-group-item\\" style={{...}}>
+    <img src=\\"https://images.hearthis.at/1/5/2/_/uploads/283048/image_track/1914537/w200_h200_q70_----1525319281387.jpg\\" alt=\\"artist\\" className=\\"img-thumbnail\\" style={{...}} />
+    <div style={{...}}>
+      <div style={{...}}>
+        TDSmix
+      </div>
+      <ul style={{...}}>
+        <li style={{...}}>
+          Play Count: 
+          126
+        </li>
+      </ul>
+    </div>
+  </button>
+</Link>"
+`;

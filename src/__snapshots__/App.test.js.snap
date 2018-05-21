@@ -6,6 +6,7 @@ exports[`App renders correctly 1`] = `
     <Navbar song={[undefined]} />
     <div className=\\"container-fluid\\">
       <Route exact={true} path=\\"/\\" render={[Function: render]} />
+      <Route exact={true} path=\\"/songs/:id\\" render={[Function: render]} />
     </div>
   </div>
 </BrowserRouter>"

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistsFeed renders correctly 1`] = `
+"<div className=\\"container\\">
+  <h2>
+    Top Artists
+  </h2>
+  <hr />
+  <div className=\\"list-group\\">
+    <ArtistBox artist={{...}} />
+  </div>
+</div>"
+`;
