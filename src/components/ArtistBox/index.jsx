@@ -5,9 +5,14 @@ const styles = {
   artistLink: {
     textDecoration: "none"
   },
+  groupItem: {
+    width: "100%",
+    textAlign: "left",
+    cursor: "pointer"
+  },
   artistImage: {
-    height: "80",
-    width: "80"
+    height: "80px",
+    width: "80px"
   },
   artistDetails: {
     display: "inline-block"
@@ -31,10 +36,14 @@ const styles = {
 const ArtistBox = ({ artist }) => {
   return (
     <Link to={{ pathname: `/songs/${artist.id}` }} style={styles.artistLink}>
-      <button type="button" className="list-group-item">
+      <button
+        type="button"
+        className="list-group-item"
+        style={styles.groupItem}
+      >
         <img
           src={artist.thumb}
-          alt=""
+          alt="artist"
           className="img-thumbnail"
           style={styles.artistImage}
         />

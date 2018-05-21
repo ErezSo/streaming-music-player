@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SongPage renders correctly 1`] = `
+"<div className=\\"panel panel-default\\">
+  <div className=\\"panel-heading\\">
+    <strong>
+      TDSmix
+       - 
+      Bestami Turna - Soundpark 14.04.2018
+    </strong>
+  </div>
+  <ul className=\\"list-group\\">
+    <li className=\\"list-group-item\\" style={{...}}>
+      <div style={{...}}>
+        <img src=\\"https://images.hearthis.at/1/5/2/_/uploads/283048/image_track/1914537/w500_q70_----1525319281387.jpg\\" alt=\\"song\\" className=\\"img-rounded\\" style={{...}} />
+        <button style={{...}} className=\\"btn btn-warning glyphicon glyphicon-play-circle\\" onClick={[Function: mockConstructor]} />
+      </div>
+      <div>
+        <ul style={{...}}>
+          <li>
+            Genre: 
+          </li>
+          <li>
+            Year released: 
+            2018
+          </li>
+          <li>
+            Download:
+             
+            <a href={[undefined]} className=\\"glyphicon glyphicon-circle-arrow-down\\" alt=\\"download song\\" download={true} style={{...}} />
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>"
+`;
