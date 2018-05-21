@@ -8,9 +8,7 @@ exports[`Navbar renders correctly 1`] = `
         Home
       </Link>
     </div>
-    <div className=\\"navbar-text navbar-right\\" style={{...}}>
-      <t src=\\"\\" autoPlay={true} controls={true} className=\\"\\" controlsList=\\"\\" crossOrigin=\\"\\" id=\\"\\" listenInterval={10000} loop={false} muted={false} onAbort={[Function: onAbort]} onCanPlay={[Function: onCanPlay]} onCanPlayThrough={[Function: onCanPlayThrough]} onEnded={[Function: onEnded]} onError={[Function: onError]} onListen={[Function: onListen]} onPause={[Function: onPause]} onPlay={[Function: onPlay]} onSeeked={[Function: onSeeked]} onVolumeChanged={[Function: onVolumeChanged]} onLoadedMetadata={[Function: onLoadedMetadata]} preload=\\"metadata\\" style={{...}} title=\\"\\" volume={1} />
-    </div>
+    <MusicPlayer song=\\"\\" />
   </div>
 </nav>"
 `;

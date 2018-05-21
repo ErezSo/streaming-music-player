@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MusicPlayer renders correctly 1`] = `
+"<div className=\\"navbar-text navbar-right\\" style={{...}}>
+  <t src=\\"https://hearthis.at/tdsmix/bestami-turna-soundpark-14042018/listen/?s=rCW\\" autoPlay={true} controls={true} className=\\"\\" controlsList=\\"\\" crossOrigin=\\"\\" id=\\"\\" listenInterval={10000} loop={false} muted={false} onAbort={[Function: onAbort]} onCanPlay={[Function: onCanPlay]} onCanPlayThrough={[Function: onCanPlayThrough]} onEnded={[Function: onEnded]} onError={[Function: onError]} onListen={[Function: onListen]} onPause={[Function: onPause]} onPlay={[Function: onPlay]} onSeeked={[Function: onSeeked]} onVolumeChanged={[Function: onVolumeChanged]} onLoadedMetadata={[Function: onLoadedMetadata]} preload=\\"metadata\\" style={{...}} title=\\"\\" volume={1} />
+</div>"
+`;

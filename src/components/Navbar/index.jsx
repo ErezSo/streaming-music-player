@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ReactAudioPlayer from "react-audio-player";
-
+import { MusicPlayer } from "../index";
 const styles = {
   header: {
     display: "inline-block"
@@ -24,9 +24,7 @@ function Navbar({ song = "" }) {
             Home
           </Link>
         </div>
-        <div className="navbar-text navbar-right" style={styles.text}>
-          <ReactAudioPlayer src={song} autoPlay controls />
-        </div>
+        <MusicPlayer song={song} />
       </div>
     </nav>
   );
