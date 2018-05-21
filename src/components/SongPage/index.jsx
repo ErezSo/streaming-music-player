@@ -1,15 +1,5 @@
 import React from "react";
 
-const song = { id: "", title: "", user: { username: "" } };
-
-const findSong = (artists, id) => {
-  return artists.length > 0
-    ? artists.find(artist => artist.id === id, 10)
-    : song;
-};
-
-const convertToYear = date => new Date(date).getFullYear();
-
 const styles = {
   listItem: {
     position: "relative",
@@ -40,6 +30,16 @@ const styles = {
   }
 };
 
+const song = { id: "", title: "", user: { username: "" } };
+
+const findSong = (artists, id) => {
+  return artists.length > 0
+    ? artists.find(artist => artist.id === id, 10)
+    : song;
+};
+
+const convertToYear = date => new Date(date).getFullYear();
+
 function SongPage({
   artists,
   match: {
@@ -69,7 +69,7 @@ function SongPage({
             <button
               style={styles.button}
               className="btn btn-warning glyphicon glyphicon-play-circle"
-              onClick={playSong}
+              onClick={() => playSong(song.stream_url)}
             />
           </div>
           <div>

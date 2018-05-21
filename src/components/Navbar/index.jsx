@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ReactAudioPlayer from "react-audio-player";
 import { MusicPlayer } from "../index";
+
 const styles = {
   header: {
     display: "inline-block"

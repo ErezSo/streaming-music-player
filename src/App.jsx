@@ -4,7 +4,8 @@ import { ArtistsFeed, Navbar, SongPage } from "./components";
 
 class App extends Component {
   state = {
-    artists: []
+    artists: [],
+    song: ""
   };
 
   componentDidMount() {
@@ -18,12 +19,14 @@ class App extends Component {
       });
   }
 
+  playSong = song => this.setState({ song });
+
   render() {
     const { artists } = this.state;
     return (
       <BrowserRouter>
         <div>
-          <Navbar song={this.props.song} />
+          <Navbar song={this.state.song} />
           <div className="container-fluid">
             <Route
               exact
@@ -33,7 +36,13 @@ class App extends Component {
             <Route
               exact
               path="/songs/:id"
-              render={match => <SongPage artists={artists} match={match} />}
+              render={match => (
+                <SongPage
+                  artists={artists}
+                  playSong={this.playSong}
+                  match={match}
+                />
+              )}
             />
           </div>
         </div>

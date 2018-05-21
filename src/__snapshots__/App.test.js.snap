@@ -3,7 +3,7 @@
 exports[`App renders correctly 1`] = `
 "<BrowserRouter>
   <div>
-    <Navbar song={[undefined]} />
+    <Navbar song=\\"\\" />
     <div className=\\"container-fluid\\">
       <Route exact={true} path=\\"/\\" render={[Function: render]} />
       <Route exact={true} path=\\"/songs/:id\\" render={[Function: render]} />
