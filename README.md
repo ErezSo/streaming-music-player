@@ -1,10 +1,10 @@
 # Streaming Music Player
 
-Simple music player that fetches the top artists from the hearthis.at API.
+A simple music player that fetches the top artists from the hearthis.at API.
 
 [Live version](http://hear-this-song.surge.sh/)
 
-Technologies been used to build the project:
+The technologies that were used in this project:
 
 * React
 * React-Create-App (includes: Babel, Webpack, React-Scripts)
