@@ -1,6 +1,8 @@
 # Streaming Music Player
 
-Simple music player that fetches the top artists from the hearthis.at API 
+Simple music player that fetches the top artists from the hearthis.at API.
+
+[Live version](http://hear-this-song.surge.sh/)
 
 Technologies been used to build the project:
 
