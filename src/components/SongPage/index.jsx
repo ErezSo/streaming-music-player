@@ -24,13 +24,20 @@ const styles = {
     position: "absolute",
     left: "12em",
     listStyleType: "none"
-  },
-  downloadLink: {
-    textDecoration: "none"
   }
 };
 
-// Modification to source: https://stackoverflow.com/a/37096512/4640352
+const song = { id: "", title: "", user: { username: "" } };
+
+function findSong(artists, id) {
+  return artists.length > 0
+    ? artists.find(artist => artist.id === id, 10)
+    : song;
+}
+
+const convertToYear = date => new Date(date).getFullYear();
+
+// Source: https://stackoverflow.com/a/37096512/4640352
 function secondsToHms(d) {
   d = Number(d);
   var h = Math.floor(d / 3600);
@@ -42,16 +49,6 @@ function secondsToHms(d) {
   var sDisplay = s > 0 ? s : "";
   return hDisplay + mDisplay + sDisplay;
 }
-
-const song = { id: "", title: "", user: { username: "" } };
-
-function findSong(artists, id) {
-  return artists.length > 0
-    ? artists.find(artist => artist.id === id, 10)
-    : song;
-}
-
-const convertToYear = date => new Date(date).getFullYear();
 
 function SongPage({
   artists,
@@ -90,18 +87,6 @@ function SongPage({
               <li>Genre: {song.genre}</li>
               <li>Year released: {convertToYear(song.release_date)}</li>
               <li>Song duration {secondsToHms(song.duration)}</li>
-              {song.downloadable && (
-                <li>
-                  Download:{" "}
-                  <a
-                    href={song.download_url}
-                    className="glyphicon glyphicon-circle-arrow-down"
-                    alt="download song"
-                    download
-                    style={styles.downloadLink}
-                  />
-                </li>
-              )}
             </ul>
           </div>
         </li>
