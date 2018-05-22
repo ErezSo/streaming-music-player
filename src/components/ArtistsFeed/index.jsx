@@ -1,14 +1,28 @@
 import React from "react";
+import InfiniteScroll from "react-infinite-scroll-component";
 import { ArtistBox } from "../index";
 
-function ArtistsFeed({ artists }) {
+const withDelay = 500;
+
+function ArtistsFeed({ artists, loadArtists }) {
   return (
     <div className="container">
       <h2>Top Artists</h2>
       <hr />
-      <div className="list-group">
+      <InfiniteScroll
+        className="list-group"
+        dataLength={artists.length}
+        next={() => loadArtists(withDelay)}
+        hasMore={true}
+        loader={<h4>Loading...</h4>}
+        endMessage={
+          <p style={{ textAlign: "center" }}>
+            <b>Yay! You have seen it all</b>
+          </p>
+        }
+      >
         {artists.map((artist, i) => <ArtistBox key={i} artist={artist} />)}
-      </div>
+      </InfiniteScroll>
     </div>
   );
 }

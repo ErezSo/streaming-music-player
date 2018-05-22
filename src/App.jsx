@@ -5,19 +5,32 @@ import { ArtistsFeed, Navbar, SongPage } from "./components";
 class App extends Component {
   state = {
     artists: [],
+    page: 1,
     song: ""
   };
 
   componentDidMount() {
+    this.loadArtists();
+  }
+
+  loadArtists = (delay = 0) => {
+    const { page, artists } = this.state;
     return fetch(
-      "https://api-v2.hearthis.at/feed/?type=popular&page=1&count=20"
+      `https://api-v2.hearthis.at/feed/?type=popular&page=${page}&count=20`
     )
       .then(res => res.json())
-      .then(data => this.setState({ artists: data }))
+      .then(data => {
+        setTimeout(() => {
+          this.setState({
+            artists: artists.concat(data),
+            page: page + 1
+          });
+        }, delay);
+      })
       .catch(error => {
         throw error;
       });
-  }
+  };
 
   playSong = song => this.setState({ song });
 
@@ -31,7 +44,9 @@ class App extends Component {
             <Route
               exact
               path="/"
-              render={() => <ArtistsFeed artists={artists} />}
+              render={() => (
+                <ArtistsFeed artists={artists} loadArtists={this.loadArtists} />
+              )}
             />
             <Route
               exact
