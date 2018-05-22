@@ -86,7 +86,7 @@ function SongPage({
             <ul style={styles.deatilsList}>
               <li>Genre: {song.genre}</li>
               <li>Year released: {convertToYear(song.release_date)}</li>
-              <li>Song duration {secondsToHms(song.duration)}</li>
+              <li>Duration: {secondsToHms(song.duration)}</li>
             </ul>
           </div>
         </li>
