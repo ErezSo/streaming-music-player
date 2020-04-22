@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "4.4.1",
+    "bootstrap": "3.4.1",
     "react": "16.13.1",
     "react-audio-player": "0.13.0",
     "react-dom": "16.13.1",
