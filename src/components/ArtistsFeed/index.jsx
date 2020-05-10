@@ -1,5 +1,5 @@
 import React from "react"
-import InfiniteScroll from "react-infinite-scroll-component"
+import InfiniteScroll from "react-infinite-scroller"
 import { ArtistBox } from "../index"
 import Styled from "styled-components"
 
@@ -16,10 +16,9 @@ function ArtistsFeed({ artists, loadArtists }) {
       <hr />
       <InfiniteScroll
         className="list-group"
-        dataLength={artists.length}
-        next={() => loadArtists(withDelay)}
-        hasMore={true}
+        loadMore={() => loadArtists(withDelay)}
         loader={<Loading>Loading...</Loading>}
+        hasMore
       >
         {artists.map((artist, i) => (
           <ArtistBox key={i} artist={artist} />
