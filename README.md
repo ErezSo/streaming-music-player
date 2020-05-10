@@ -6,13 +6,14 @@ A simple music player that fetches the top artists from the hearthis.at API.
 
 The technologies that were used in this project:
 
-* React
-* React-Create-App (includes: Babel, Webpack, React-Scripts)
-* React-Router
-* Bootstrap
-* ReactAudioPlayer
-* react-infinite-scroll-component
-* hearthis.at API
+- React (+ Hooks)
+- Create-React-App (includes: Babel, Webpack)
+- React-Router
+- Styled Components
+- Bootstrap
+- ReactAudioPlayer
+- react-infinite-scroll
+- hearthis.at API
 
 ### Setting up
 
